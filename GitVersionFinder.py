@@ -120,7 +120,7 @@ def run(url, repo, extension, num_threads, verbose):
 	# Print top 5 discovered versions
     print("\nTop 5 discovered versions:")
     versions = sorted(versions.items(), key=lambda ver: ver[1], reverse=True)[:5]
-    for version, hits in versions: print("Version: " + version + " Mataches: " + str(hits))
+    for version, hits in versions: print("Version: " + version + " Matches: " + str(hits))
 
 
 def main():
