@@ -44,7 +44,6 @@ def run(url, repo, extension, num_threads, verbose):
     repo_folder = repo.rsplit('/',1)[1]
     if not (os.path.isdir(repo_folder)):
         try: 
-            print("Cloning your repo: " + repo_folder)
             if not (os.path.isdir(repo_folder)):
                 os.system('git clone ' + repo + ' ' + repo_folder)
         except:
